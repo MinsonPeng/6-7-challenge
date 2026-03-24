@@ -37,7 +37,20 @@
     <div id="sub-info" class="sub-msg">按下 [按鈕] 或 [空白鍵] 開始</div>
 
     <div class="instruction">提示：達成目標即可任選攤位商品一件！</div>
-
+            background: #1a1a1a; 
+            color: white; 
+            text-align: center; 
+            font-family: "Microsoft JhengHei", Arial, sans-serif; 
+            overflow: hidden;
+            /* 防止手機長按選取文字 */
+            user-select: none;
+            -webkit-user-select: none;
+            /* 讓整個畫面都可以點擊 */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
     <script>
         let startTime, timerInterval, running = false;
         let lastTriggerTime = 0; // 用於防彈跳邏輯
